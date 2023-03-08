@@ -1,29 +1,29 @@
 public class Array_2 {
     public static void main(String[] args) {
 
-        int number[] = {-32, 12, -71, 25, -90, 41};                //1.Створюю масив з ініціалізованими значеннями
-        int total = 0;                                             //14.Створюю змінну для значення суми
-        ReturnToZero(number);                                      //15.Використовую створений метод сортування
+        int number[] = {-32, 12, -71, 25, -90, 41};                
+        int total = 0;                                            
+        ReturnToZero(number);
         for (int i = 0; i < number.length; i++) {
-            total += number[i];                                    //16.Додаю з прирівнянням комірки попорядку
+            total += number[i];           
         }
-        System.out.println(total);                                 //17.Вивід суми значень більших за нуль
+        System.out.println(total);
     }
 
-    static void ReturnToZero(int[] e) {                             //2.Створюю метод який сортує числа
-        int iteration = 0;                                          //3.Змінна яка записує к-сть повтореннь які будуть використані для сортування
-        boolean change = true;                                      //4.Змінна яка продовжує сортування
-        while (change) {                                            //5.Цикл який повторює програму поки відбуваються заміни елементів
-            change = false;                                         //13.Змінна яка контролює повтор, коли вона буде дорівнювати свому значенню це ознака відсортованого масиву
-            for (int i = 0; i < e.length-1-iteration; i++) {        //6.Починаю з 1го елементу, зупиняю порівняння на передостанньому елементі, віднімаю повтор щоб не перевіряти останні комірки
-                if (e[i] > 0) {                                     //7.Порівнюю елементи з нулем
-                    int hp = e[i];                                  //9.Cтворюю тимчасову змінну для зберігання першого елементу
-                    e[i] = e[i + 1];                                //10.Перенос останнього елементу в попередній
-                    e[i + 1] = hp;                                  //11.Запис значення з тимчасової змінної в вільний елемент масиву
-                    change = true;                                  //12.Змінна яка показує що заміна відбулась
-                } else e[i] = 0;                                    //8.Якщо елемент менший за нуль, елемент прирівнюється нулю
+    static void ReturnToZero(int[] e) {                            
+        int iteration = 0;                                          
+        boolean change = true;                                      
+        while (change) {                                            
+            change = false;                                         
+            for (int i = 0; i < e.length-1-iteration; i++) {         
+                if (e[i] > 0) {                                     
+                    int hp = e[i];                                 
+                    e[i] = e[i + 1];                             
+                    e[i + 1] = hp;                                  
+                    change = true;                                 
+                } else e[i] = 0;                                  
             }
-            iteration++;                                            //13.Повтор циклу
+            iteration++;                                           
         }
     }
 }
