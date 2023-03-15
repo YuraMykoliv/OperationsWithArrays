@@ -1,4 +1,4 @@
-public class Array_2 {
+public class Array2 {
     public static void main(String[] args) {
 
         int number[] = {-32, 12, -71, 25, -90, 41};                
