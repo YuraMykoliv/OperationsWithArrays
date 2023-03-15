@@ -7,7 +7,7 @@
         for (int i = 0; i < number.length; i++) {
             total += number[i];
         }
-        int arithmeticMount = total /= number.length;
+        int arithmeticMount = total / number.length;
         System.out.print(arithmeticMount);
     }
 }
