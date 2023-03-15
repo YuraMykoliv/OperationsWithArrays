@@ -3,14 +3,14 @@ public class Array2 {
 
         int number[] = {-32, 12, -71, 25, -90, 41};                
         int total = 0;                                            
-        ReturnToZero(number);
+        returnToZero(number);
         for (int i = 0; i < number.length; i++) {
             total += number[i];           
         }
         System.out.println(total);
     }
 
-    static void ReturnToZero(int[] e) {                            
+    static void returnToZero(int[] e) {                            
         int iteration = 0;                                          
         boolean change = true;                                      
         while (change) {                                            
