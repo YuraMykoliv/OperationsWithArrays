@@ -1,10 +1,10 @@
 public class Array1 {
     public static void main(String args[]) {
         int numbers[] = {2, 3, 1, 7, 11};                           
-        ReversSortMethod(numbers);                                 
+        reversSortMethod(numbers);                                 
     }
 
-    static void ReversSortMethod(int[] e) {                         
+    static void reversSortMethod(int[] e) {                         
         int iteration = 0;                                          
         boolean change = true;                                      
         while (change) {                                            
