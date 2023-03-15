@@ -1,5 +1,5 @@
 import java.util.Arrays;
-public class Array_4 {
+public class Array4 {
     public static void main(String args[]) {
         int e[] = {3, 2, 3, 1, 4, 2, 8, 3};
 
