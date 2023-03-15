@@ -1,4 +1,4 @@
-public class Array_1 {
+public class Array1 {
     public static void main(String args[]) {
         int numbers[] = {2, 3, 1, 7, 11};                           
         ReversSortMethod(numbers);                                 
